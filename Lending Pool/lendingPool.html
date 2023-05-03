@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lending Pool dApp</title>
+    <script src="https://cdn.jsdelivr.net/npm/web3@1.5.5/dist/web3.min.js"></script>
+</head>
+<body>
+    <h1>Lending Pool dApp</h1>
+    <div>
+        <h3>Deposit ETH</h3>
+        <input id="ethAmount" type="number" placeholder="Enter ETH amount">
+        <button id="depositETH">Deposit ETH</button>
+    </div>
+    <div>
+        <h3>Deposit USDT</h3>
+        <input id="usdtAmount" type="number" placeholder="Enter USDT amount">
+        <button id="depositUSDT">Deposit USDT</button>
+    </div>
+    <div>
+        <h3>Borrow USDT</h3>
+        <input id="borrowAmount" type="number" placeholder="Enter USDT amount to borrow">
+        <button id="borrowUSDT">Borrow USDT</button>
+    </div>
+     
+     <!-- repayedUSDT -->
+<h2>Repay USDT</h2>
+<input type="text" id="repayAmount" placeholder="USDT Amount">
+<button id="repayUSDT" onclick="repayedUSDT()">Repay USDT</button>
+
+
+<!-- borrowedUSDT, borrowedUSDTTimestamp, getInterestAmount, healthFactor, totalETHDeposits, totalUSDTDeposits -->
+<h3>Get Account Information</h3>
+<button id="getAccountInfo">Get Account Information</button>
+
+<!-- Output -->
+<h3>Output</h3>
+<pre id="output"></pre>
+
+     
+     <script src="lendingPool.js"></script>
+ </body>
+ </html>

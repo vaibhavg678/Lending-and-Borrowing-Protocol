@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liquidation</title>
+    <script src="https://cdn.jsdelivr.net/npm/web3@1.3.0/dist/web3.min.js"></script>
+</head>
+<body>
+    <h1>Liquidation</h1>
+
+    <!-- Liquidate Borrower -->
+    <h2>Liquidate Borrower</h2>
+    <input type="text" id="borrower" placeholder="Borrower Address">
+    <button id="liquidateBorrower" onclick="liquidate()">Liquidate Borrower</button>
+
+    <!-- Deposit ETH -->
+    <h2>Deposit ETH</h2>
+    <input type="text" id="ethDepositAmount" placeholder="ETH Amount">
+    <button id="depositEth" onclick="deposit()">Deposit ETH</button>
+
+    <!-- Get Liquidation Bonus -->
+<h2>Get Liquidation Bonus</h2>
+<button id="getLiquidationBonus">Get Liquidation Bonus</button>
+<p id="liquidationBonusDisplay"></p>
+
+<!-- Get Repay Amount -->
+<h2>Get Repay Amount</h2>
+<button id="getRepayAmount">Get Repay Amount</button>
+<p id="repayAmountDisplay"></p>
+
+<!-- Get Repay Percentage -->
+<h2>Get Repay Percentage</h2>
+<button id="getRepayPercentage">Get Repay Percentage</button>
+<p id="repayPercentageDisplay"></p>
+
+<!-- Get Total Collateral Including Bonus -->
+<h2>Get Total Collateral Including Bonus</h2>
+<button id="getTotalCollateralIncludingBonus">Get Total Collateral Including Bonus</button>
+<p id="totalCollateralIncludingBonusDisplay"></p>
+
+<!-- Liquidation Threshold -->
+<h2>Liquidation Threshold</h2>
+<button id="displayThreshold" onclick="displayLiquidationThreshold()">Display Liquidation Threshold</button>
+<div id="liquidationThresholdDisplay"></div>
+
+
+<!-- Liquidation Bonuses -->
+<h2>Liquidation Bonuses</h2>
+<button id="liquidationBonuses">Liquidation Bonuses</button>
+<p id="liquidationBonusesDisplay"></p>
+
+
+
+    
+    <script src="liquidation.js"></script>
+</body>
+</html>

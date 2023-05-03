@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mintable ERC20</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/web3/1.5.3/web3.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@metamask/dapp-client"></script>
+    
+</head>
+<body>
+    <h1>Mintable ERC20</h1>
+
+    <!-- Mint Tokens -->
+    <h2>Mint Tokens</h2>
+    <input type="text" id="mintRecipient" placeholder="Recipient Address">
+    <input type="text" id="mintAmount" placeholder="Token Amount">
+    <button id="mintTokens" onclick="mintTokens()">Mint Tokens</button>
+
+    <!-- Approve -->
+    <h3>Approve</h3>
+    <input type="text" id="spender" placeholder="Spender Address">
+    <input type="text" id="approveAmount" placeholder="Token Amount">
+    <button id="approve" onclick="approve()">Approve</button>
+
+    <!-- Increase Allowance -->
+    <h4>Increase Allowance</h4>
+    <input type="text" id="increaseSpender" placeholder="Spender Address">
+    <input type="text" id="increaseAmount" placeholder="Token Amount">
+    <button id="increaseAllowance" onclick="increaseAllowance()">Increase Allowance</button>
+
+<script src="mintableERC20.js"></script>
+</body>
+</html>

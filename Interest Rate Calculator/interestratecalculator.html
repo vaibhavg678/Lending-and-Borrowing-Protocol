@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo Functions</title>
+</head>
+<body>
+    <!-- Set Latest ETH/USD Price -->
+    <h2>Set Latest ETH/USD Price</h2>
+    <input type="text" id="ethUsdPrice" placeholder="ETH/USD Price">
+    <button id="setLatestETHUSDPrice">Set Latest ETH/USD Price</button>
+
+    <!-- Toggle Demo Mode -->
+    <h2>Toggle Demo Mode</h2>
+    <button id="toggleDemoMode">Toggle Demo Mode</button>
+
+    <!-- Calculate Borrowable Amount -->
+    <h2>Calculate Borrowable Amount</h2>
+    <input type="text" id="ethCollateralAmount" placeholder="ETH Collateral Amount">
+    <button id="calculateBorrowableAmount">Calculate Borrowable Amount</button>
+
+    <!-- Calculate Collateral Value -->
+    <h2>Calculate Collateral Value</h2>
+    <input type="text" id="borrowedUsdtAmount" placeholder="Borrowed USDT Amount">
+    <button id="calculateCollateralValue">Calculate Collateral Value</button>
+
+    <!-- Calculate Interest Rate -->
+    <h2>Calculate Interest Rate</h2>
+    <input type="text" id="borrowedUsdtAmountForInterestRate" placeholder="Borrowed USDT Amount">
+    <button id="calculateInterestRate">Calculate Interest Rate</button>
+
+    <!-- Demo Mode -->
+<h2>Demo Mode</h2>
+<div id="demoModeStatus"></div>
+<button id="refreshDemoModeStatus" onclick="displayDemoModeStatus()">Refresh Demo Mode Status</button>
+
+
+<!-- ETH/USD Price Feed -->
+<h2>ETH/USD Price Feed</h2>
+<button id="getEthUsdPriceFeed" onclick="getEthUsdPriceFeed()">Get ETH/USD Price Feed</button>
+<div id="ethUsdPriceFeedDisplay"></div>
+
+
+  
+    <!-- Get Latest ETH/USD Price -->
+    <h2>Get Latest ETH/USD Price</h2>
+    <button id="getLatestETHUSDPrice">Get Latest ETH/USD Price</button>
+
+    <script src="demoFunctions.js"></script>
+</body>
+</html>
