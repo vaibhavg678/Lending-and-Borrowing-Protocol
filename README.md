@@ -8,7 +8,7 @@ Here is the overview of how protocol works:
 
 2. Interest rates: The protocol algorithmically determines the interest rates for both lending or borrowing, based on factors such as the supply and demand of the assets in the pool. As the demand for borrowing an asset increases, interest rates for both lending and borrowing that asset also increase.
 
-**here we have taken consideration of block.timestamp involved in calculation of interest rate**.
+**Here we have taken consideration of block.timestamp involved in calculation of interest rate**.
 
 3. Borrowing assets: Borrowers can take out loans by depositing collateral (usually in the form of crypto assets) into the protocol. The collateral's value must exceed the value of the borrowed asset to account for potential price fluctuations and minimize the risk of default. The borrowing limit is defined by the health factor, which varies depending on the live pricing of collateral(**which we are getting from chainlink in our project**) of the asset involved and also on how much amount a borrower has borrowed.
 
